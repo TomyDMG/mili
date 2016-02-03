@@ -1,0 +1,1 @@
+SELECT * FROM messages GROUP BY user_id ORDER BY COUNT(*) DESC LIMIT 10 
