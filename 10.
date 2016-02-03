@@ -6,11 +6,10 @@
 ```
 def separator arr
   low=hi= [],[]
-  average=0
-
+  sum=0
   arr.each_with_index do |v,i|
-  average+=v/(i+1)
-  v>average ? hi.push(v) : low.push(v)
+    sum+=v
+    v>(sum/(i+1)) ? hi.push(v) : low.push(v)
   end
   [hi,lo]
 end
